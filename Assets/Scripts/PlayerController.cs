@@ -6,9 +6,7 @@ public class PlayerController : MonoBehaviour
     private float horizontal;
     public float speed;
     public float jumpingPower;
-    public float sprintSpeed;
     private bool isFacingRight = true;
-    private bool isSprinting = false;
 
     private bool isJumping;
 
@@ -65,7 +63,7 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-            rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
     }
     private bool IsGrounded()
     {
